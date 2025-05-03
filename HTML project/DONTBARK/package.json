@@ -1,0 +1,23 @@
+{
+  "name": "dontbark",
+  "version": "1.0.0",
+  "description": "Discription kya du meri zindgi khud ek Black Discription HAI",
+  "main": "NAHI PTA",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "h ni"
+  },
+
+  "author": "KHERE WAla",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.14.0",
+    "nodemon": "^3.1.10"
+  }
+}

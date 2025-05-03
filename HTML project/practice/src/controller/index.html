@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Selling Price: <input type="text" name="" id="p1"> <br><br>
+    Cost Price : <input type="text" id="p2">
+    <br><br>
+
+    <button onclick="find()">Find</button>
+
+    <h3 id="num1"></h3>
+</body>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profit/Loss Calculator</title>
+</head>
+<body>
+
+    Selling Price: <input type="text" id="p1"><br>
+    Cost Price: <input type="text" id="p2"><br>
+    <button onclick="find()">Calculate</button>
+
+    <p id="num1"></p>
+
+    <script>
+        function find() {
+            let a = parseFloat(document.getElementById("p1").value); 
+            let b = parseFloat(document.getElementById("p2").value);
+
+            if (isNaN(a) || isNaN(b)) {
+                document.getElementById("num1").innerHTML = "Please enter valid numbers.";
+                return;
+            }
+
+            let c = a - b;
+
+            if (a > b) {
+                document.getElementById("num1").innerHTML = "You are in Profit: ₹" + c.toFixed(2);
+            } else if (a < b) {
+                document.getElementById("num1").innerHTML = "You are in Loss: ₹" + Math.abs(c).toFixed(2);
+            } else {
+                document.getElementById("num1").innerHTML = "No Profit, No Loss.";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+</html>
